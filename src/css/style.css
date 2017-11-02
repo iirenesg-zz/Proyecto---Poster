@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #E30613 url("../img/texture.png");
+  background-size: cover; }
+
+.img-small {
+  width: 200px; }
+
+.witch {
+  background-color: #1CA84D; }
+
+.skull {
+  background-color: #662483; }
+
+.farmer {
+  background-color: #FFF152; }
+
+.devil {
+  background-color: #FEEDDE; }
+
+.img-medium {
+  width: 400px; }
+
+.giants {
+  background-color: #F39300; }
+
+.img-large {
+  width: 800px; }
+
+.bull {
+  background-color: #008ECF; }
+
+/*# sourceMappingURL=style.css.map */
