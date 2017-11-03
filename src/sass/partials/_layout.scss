@@ -1,0 +1,58 @@
+.wrapper {
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 33.3vw 33.3vw 33.3vw;
+	grid-template-rows: 33.3vh 33.3vh 33.3vh;
+	padding: 72px 0 0 15px;
+
+	@media screen and (min-width: 450px) {
+		padding-top: 15px;
+	}
+
+	@media screen and (min-width: 525px) {
+		grid-template-columns: 40vw 40vw 20vw;
+		grid-template-rows: 35vh 10vh 35vh 20vh;
+	}
+
+	@media screen and (min-width: 650px) {
+		grid-template-rows: 35vh 35vh 10vh 20vh;
+	}
+
+	@media screen and (min-width: 900px) {
+		grid-template-columns: 25vw 25vw 25vw 25vw;
+		grid-template-rows: 25vh 15vh 10vh 50vh;
+		width: 80%;
+	}
+}
+
+.info-concert {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	color: #fff;
+	text-align: right;
+
+	strong {
+		font-size: 1.5;
+	}
+
+	a {
+		color: #fff;
+	}
+
+	@media screen and (min-width: 650px) {
+		grid-row-start: 4;
+	}
+
+	@media screen and (min-width: 900px) {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 4;
+		grid-row-end: 5;
+		text-align: initial;
+	}
+}
+
+.info-prod {
+	display: none;
+}

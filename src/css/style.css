@@ -3,34 +3,163 @@
   padding: 0; }
 
 body {
-  background: #E30613 url("../img/texture.png");
-  background-size: cover; }
+  background: #AD050F url("../img/texture.png");
+  background-size: cover;
+  font: 18px "Open Sans", sans-serif; }
+  @media screen and (min-width: 900px) {
+    body {
+      font-size: 21px; } }
 
-.img-small {
-  width: 200px; }
+.main-title {
+  font: 60px "Sigmar One", sans-serif;
+  writing-mode: vertical-rl;
+  color: #fff;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 4; }
+  @media screen and (min-width: 350px) {
+    .main-title {
+      font-size: 72px; } }
+  @media screen and (min-width: 650px) {
+    .main-title {
+      grid-row-end: 5;
+      font-size: 90px; } }
+  @media screen and (min-width: 900px) {
+    .main-title {
+      writing-mode: initial;
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      font-size: 110px; } }
+
+.sub-title {
+  font: 30px "Sigmar One", sans-serif;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  color: #fff;
+  text-align: right; }
+  @media screen and (min-width: 650px) {
+    .sub-title {
+      grid-row-start: 3; } }
+  @media screen and (min-width: 900px) {
+    .sub-title {
+      grid-row-start: 3;
+      grid-row-end: 5;
+      grid-column-start: 3;
+      grid-column-end: 5;
+      font-size: 40px;
+      text-align: initial; } }
 
 .witch {
-  background-color: #1CA84D; }
+  display: none; }
+  @media screen and (min-width: 525px) {
+    .witch {
+      display: inline-block;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      width: 100%; } }
+  @media screen and (min-width: 650px) {
+    .witch {
+      grid-row-start: 2; } }
+  @media screen and (min-width: 900px) {
+    .witch {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2; } }
 
 .skull {
-  background-color: #662483; }
+  display: none; }
+  @media screen and (min-width: 650px) {
+    .skull {
+      display: inline-block;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      width: 100%; } }
+  @media screen and (min-width: 900px) {
+    .skull {
+      display: none; } }
 
 .farmer {
-  background-color: #FFF152; }
-
-.devil {
-  background-color: #FEEDDE; }
-
-.img-medium {
-  width: 400px; }
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  width: 100%; }
+  @media screen and (min-width: 525px) {
+    .farmer {
+      grid-column-start: 2; } }
+  @media screen and (min-width: 650px) {
+    .farmer {
+      grid-row-start: 2; } }
+  @media screen and (min-width: 900px) {
+    .farmer {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2; } }
 
 .giants {
-  background-color: #F39300; }
-
-.img-large {
-  width: 800px; }
+  display: none; }
+  @media screen and (min-width: 900px) {
+    .giants {
+      display: inline-block;
+      width: 100%;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 5; } }
 
 .bull {
-  background-color: #008ECF; }
+  display: none; }
+
+.wrapper {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33.3vw 33.3vw 33.3vw;
+  grid-template-rows: 33.3vh 33.3vh 33.3vh;
+  padding: 72px 0 0 15px; }
+  @media screen and (min-width: 450px) {
+    .wrapper {
+      padding-top: 15px; } }
+  @media screen and (min-width: 525px) {
+    .wrapper {
+      grid-template-columns: 40vw 40vw 20vw;
+      grid-template-rows: 35vh 10vh 35vh 20vh; } }
+  @media screen and (min-width: 650px) {
+    .wrapper {
+      grid-template-rows: 35vh 35vh 10vh 20vh; } }
+  @media screen and (min-width: 900px) {
+    .wrapper {
+      grid-template-columns: 25vw 25vw 25vw 25vw;
+      grid-template-rows: 25vh 15vh 10vh 50vh;
+      width: 80%; } }
+
+.info-concert {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  color: #fff;
+  text-align: right; }
+  .info-concert strong {
+    font-size: 1.5; }
+  .info-concert a {
+    color: #fff; }
+  @media screen and (min-width: 650px) {
+    .info-concert {
+      grid-row-start: 4; } }
+  @media screen and (min-width: 900px) {
+    .info-concert {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 4;
+      grid-row-end: 5;
+      text-align: initial; } }
+
+.info-prod {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

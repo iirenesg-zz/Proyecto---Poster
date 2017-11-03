@@ -1,32 +1,77 @@
-.img-small {
-	width: 200px;
-}
-
 .witch {
-	background-color: $extra-dark;
-}
-.skull {
-	background-color: $accent-dark;
-}
-.farmer {
-	background-color: $accent-light;
-}
-.devil {
-	background-color: $extra-light;
+	display: none;
+
+	@media screen and (min-width: 525px) {
+		display: inline-block;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		width: 100%;
+	}
+
+	@media screen and (min-width: 650px) {
+		grid-row-start: 2;
+	}
+
+	@media screen and (min-width: 900px) {
+		grid-column-start: 2;	
+		grid-column-end: 3;	
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
 }
 
-.img-medium {
-	width: 400px;
+.skull {
+	display: none;
+
+	@media screen and (min-width: 650px) {
+		display: inline-block;
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		width: 100%;
+	}
+
+	@media screen and (min-width: 900px) {
+		display: none;
+	}
+}
+
+.farmer {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	width: 100%;
+
+	@media screen and (min-width: 525px) {
+		grid-column-start: 2;
+	}
+
+	@media screen and (min-width: 650px) {
+		grid-row-start: 2;
+	}
+
+	@media screen and (min-width: 900px) {
+		grid-column-start: 3;	
+		grid-column-end: 4;	
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
 }
 
 .giants {
-	background-color: $complement-light;
-}
+	display: none;
 
-.img-large {
-	width: 800px;
+	@media screen and (min-width: 900px) {
+		display: inline-block;
+		width: 100%;
+		grid-column-start: 1;	
+		grid-column-end: 3;	
+		grid-row-start: 3;
+		grid-row-end: 5;
+	}
 }
 
 .bull {
-	background-color: $complement-dark;
+	display: none;
 }
